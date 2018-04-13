@@ -1,5 +1,4 @@
 init();
-document.addEventListener('DOMContentLoaded', getTask);
 
 function addTodo(){
 	$("#add-todo").keypress(function(e){
@@ -75,6 +74,7 @@ function deleteFromLocalStorage(todo) {
 }
 
 function init(){
+	document.addEventListener('DOMContentLoaded', getTask);
 	addTodo();
 	deleteTodo();
 	hideBtn();
